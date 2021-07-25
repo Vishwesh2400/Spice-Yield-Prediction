@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SPICES</title>
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href= "{{ url_for('static', filename= 'style1.css') }}" rel="stylesheet" type="text/css" media="all" />
+
+
+    <!-- Compiled and minified JavaScript -->
+    <style>
+        div.main {
+            padding: 5px 50px 75px 50px;
+        }
+
+        span,img {
+            vertical-align: middle;
+         }
+
+        .brand-logo > span,.brand-logo > img {
+            vertical-align: middle;
+        }
+
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+</head>
+<body>
+  <div>
+
+    <div class="main-w3layouts wrapper">
+		<h1>SPICE YIELD PREDICTION BASED ON INDIAN AGRICULTURE</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="." method="post" autocomplete="off" name="one">
+					<input class="text" type="text" name="state_name" placeholder="State Name" required="" >
+					<input class="text" type="text" name="district_name" placeholder="District Name" required="">
+					<input class="text" type="text" name="crop" placeholder="Crop" required="">
+					<input class="text" type="text" name="area" placeholder="Area" required="">
+					<input class="text" type="text" name="year" placeholder="Year" required="">
+					<input class="text" type="text" name="season" placeholder="Season" required="">
+					<div class="wthree-text">
+						<label class="anim">
+
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="Predict">
+				</form>
+				<p>Production would be <a href="#"> {{ pr }} KGs</a></p>
+				<p>Yield would be <a href="#"> {{ yl }} KGs/acre</a></p>
+			</div>
+		</div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+  <h1>EXPLORE BY COMMODITY</h1>
+  <br>
+  <div class="row">
+    <div class="col s3">
+      <a href="http://localhost:5000/commodity/black_pepper" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+          <img src="https://previews.123rf.com/images/asantosg/asantosg1805/asantosg180500083/101214569-vector-black-pepper-illustration-isolated-in-cartoon-style-herbs-and-species-series.jpg">
+        </div>
+        <div class="col s9">
+          <span class="card-title">Black Pepper</span>
+        </div>
+        </div>
+      </div>
+    </a>
+    </div>
+     <div class="col s3">
+      <a href="http://localhost:5000/commodity/cardamom" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+          <img src="https://mpng.subpng.com/20180509/bvq/kisspng-cardamom-food-ingredient-seed-clip-art-5af2c702e9b361.1446752415258600989572.jpg">
+        </div>
+        <div class="col s9">
+          <span class="card-title">Cardamom</span>
+        </div>
+        </div>
+      </div>
+    </a>
+    </div> <div class="col s3">
+      <a href="http://localhost:5000/commodity/chilly" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+          <img src="https://i.pinimg.com/originals/40/2b/9a/402b9af4cbe5e6e5e79cff357dce002d.jpg">
+        </div>
+        <div class="col s9">
+          <span class="card-title">Chilly</span>
+        </div>
+        </div>
+      </div>
+    </a>
+    </div> <div class="col s3">
+      <a href="http://localhost:5000/commodity/coriander" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+          <img src="https://lh3.googleusercontent.com/proxy/8htBDmRF_i4V0LeyvkXPMUfpdtXCKUiaGD1R-sHP4L9QByD-oldO-Klslr72WyrpEDv3SsRpnNQ-3XJ0RvS9RRJ7dKazeFnEB_G9-JLcJ-SaYD28yClx5BPlOcduWUzdoVK6-yzZ=s0-d">
+        </div>
+        <div class="col s9">
+          <span class="card-title">Coriander</span>
+        </div>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col s3">
+      <a href="http://localhost:5000/commodity/cumin" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+          <img src="https://thumbs.dreamstime.com/b/vector-cumin-illustration-isolated-cartoon-style-herbs-species-series-84552356.jpg">
+        </div>
+        <div class="col s9">
+          <span class="card-title">Cumin</span>
+        </div>
+        </div>
+      </div>
+    </a>
+    </div>
+     <div class="col s3">
+      <a href="http://localhost:5000/commodity/garlic" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+          <img src="https://cdn2.vectorstock.com/i/thumb-large/09/56/cartoon-bulb-white-garlic-with-cloves-vector-4490956.jpg">
+        </div>
+        <div class="col s9">
+          <span class="card-title">Garlic</span>
+        </div>
+        </div>
+      </div>
+    </a>
+    </div> <div class="col s3">
+      <a href="http://localhost:5000/commodity/ginger" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+          <img src="https://cdn3.vectorstock.com/i/thumb-large/79/02/ginger-cartoon-icon-vector-20707902.jpg">
+        </div>
+        <div class="col s9">
+          <span class="card-title">Ginger</span>
+        </div>
+        </div>
+      </div>
+    </a>
+    </div> <div class="col s3">
+      <a href="http://localhost:5000/commodity/rapeseed_mustard" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+          <img src="https://thumbs.dreamstime.com/b/mustard-seed-ball-icon-cartoon-style-vector-web-design-isolated-white-background-136019832.jpg">
+        </div>
+        <div class="col s9">
+          <span class="card-title">Rapeseed & Mustard</span>
+        </div>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col s3">
+      <a href="http://localhost:5000/commodity/turmeric" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+          <img src="https://thumbs.dreamstime.com/b/turmeric-spice-rhizome-powder-bowl-vector-cartoon-style-illustration-icon-turmeric-spice-rhizome-powder-bowl-vector-185733789.jpg">
+        </div>
+        <div class="col s9">
+          <span class="card-title">Turmeric</span>
+        </div>
+        </div>
+      </div>
+    </a>
+    </div>  
+  </div>
+    
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $('.slider').slider({full_width :true});
+  });
+</script>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
